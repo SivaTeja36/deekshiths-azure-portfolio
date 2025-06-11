@@ -1,54 +1,69 @@
 
 import { Card } from "@/components/ui/card";
-import { Settings, FileText, Award, Briefcase, Check } from "lucide-react";
+import { 
+  TestTube, 
+  CheckCircle, 
+  Activity, 
+  Bot, 
+  Smartphone, 
+  Fingerprint, 
+  Shield 
+} from "lucide-react";
 
 const skills = [
   {
     name: "Software Testing",
-    icon: Settings,
-    description: "Comprehensive testing strategies and methodologies"
+    icon: TestTube,
+    description: "Comprehensive testing strategies and methodologies",
+    color: "from-teal-blue to-navy-blue"
   },
   {
     name: "Functional Testing", 
-    icon: Check,
-    description: "Ensuring software meets functional requirements"
+    icon: CheckCircle,
+    description: "Ensuring software meets functional requirements",
+    color: "from-emerald-green to-teal-blue"
   },
   {
     name: "Performance Testing",
-    icon: Award,
-    description: "Load, stress, and performance optimization testing"
+    icon: Activity,
+    description: "Load, stress, and performance optimization testing",
+    color: "from-navy-blue to-emerald-green"
   },
   {
     name: "Automation Testing",
-    icon: Settings,
-    description: "Automated test framework development and execution"
+    icon: Bot,
+    description: "Automated test framework development and execution",
+    color: "from-teal-blue to-emerald-green"
   },
   {
     name: "Device Testing",
-    icon: Briefcase,
-    description: "Cross-platform and device compatibility testing"
+    icon: Smartphone,
+    description: "Cross-platform and device compatibility testing",
+    color: "from-emerald-green to-navy-blue"
   },
   {
     name: "Biometric Testing",
-    icon: FileText,
-    description: "Fingerprint and biometric security testing"
+    icon: Fingerprint,
+    description: "Fingerprint and biometric security testing",
+    color: "from-navy-blue to-teal-blue"
   },
   {
     name: "Vulnerability Assessment",
-    icon: Award,
-    description: "Security testing and vulnerability identification"
+    icon: Shield,
+    description: "Security testing and vulnerability identification",
+    color: "from-teal-blue to-navy-blue"
   }
 ];
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-20 bg-slate-50">
+    <section id="skills" className="py-20 bg-light-gray">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
             Core Expertise
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-warm-gray max-w-2xl mx-auto">
             Specialized in comprehensive quality assurance with deep expertise 
             across multiple testing domains and cutting-edge technologies.
           </p>
@@ -62,13 +77,13 @@ const SkillsSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 ocean-gradient rounded-full flex items-center justify-center">
+                <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br ${skill.color} rounded-full flex items-center justify-center shadow-lg`}>
                   <skill.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-navy-blue mb-3">
                   {skill.name}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-warm-gray leading-relaxed">
                   {skill.description}
                 </p>
               </div>
