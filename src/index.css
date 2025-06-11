@@ -46,13 +46,14 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Updated black and orange color palette */
+    /* Updated black dominant color palette with minimal orange */
     --portfolio-gradient-start: 0 0% 0%;
-    --portfolio-gradient-middle: 25 95% 53%;
-    --portfolio-gradient-end: 30 100% 50%;
+    --portfolio-gradient-middle: 0 0% 15%;
+    --portfolio-gradient-end: 25 90% 45%;
     --black: 0 0% 0%;
-    --dark-orange: 25 95% 53%;
-    --bright-orange: 30 100% 50%;
+    --dark-gray: 0 0% 15%;
+    --medium-gray: 0 0% 30%;
+    --accent-orange: 25 90% 45%;
     --warm-gray: 0 0% 40%;
     --light-gray: 0 0% 96%;
   }
@@ -102,20 +103,20 @@
   .portfolio-gradient {
     background: linear-gradient(135deg, 
       hsl(var(--black)) 0%, 
-      hsl(var(--dark-orange)) 50%, 
-      hsl(var(--bright-orange)) 100%);
+      hsl(var(--dark-gray)) 70%, 
+      hsl(var(--accent-orange)) 100%);
   }
   
   .professional-gradient {
     background: linear-gradient(135deg, 
       hsl(var(--black)) 0%, 
-      hsl(var(--dark-orange)) 100%);
+      hsl(var(--dark-gray)) 100%);
   }
   
   .text-gradient {
     background: linear-gradient(135deg, 
-      hsl(var(--dark-orange)) 0%, 
-      hsl(var(--bright-orange)) 100%);
+      hsl(var(--medium-gray)) 0%, 
+      hsl(var(--accent-orange)) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -149,7 +150,7 @@
     position: absolute;
     inset: -3px;
     padding: 3px;
-    background: linear-gradient(135deg, hsl(var(--dark-orange)), hsl(var(--bright-orange)));
+    background: linear-gradient(135deg, hsl(var(--black)), hsl(var(--accent-orange)));
     border-radius: 23px;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;

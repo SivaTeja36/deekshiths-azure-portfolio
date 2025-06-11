@@ -15,43 +15,43 @@ const skills = [
     name: "Software Testing",
     icon: TestTube,
     description: "Comprehensive testing strategies and methodologies",
-    color: "from-dark-orange to-black"
+    color: "from-black to-dark-gray"
   },
   {
     name: "Functional Testing", 
     icon: CheckCircle,
     description: "Ensuring software meets functional requirements",
-    color: "from-bright-orange to-dark-orange"
+    color: "from-dark-gray to-medium-gray"
   },
   {
     name: "Performance Testing",
     icon: Activity,
     description: "Load, stress, and performance optimization testing",
-    color: "from-black to-bright-orange"
+    color: "from-black to-medium-gray"
   },
   {
     name: "Automation Testing",
     icon: Bot,
     description: "Automated test framework development and execution",
-    color: "from-dark-orange to-bright-orange"
+    color: "from-medium-gray to-accent-orange"
   },
   {
     name: "Device Testing",
     icon: Smartphone,
     description: "Cross-platform and device compatibility testing",
-    color: "from-bright-orange to-black"
+    color: "from-black to-dark-gray"
   },
   {
     name: "Biometric Testing",
     icon: Fingerprint,
     description: "Fingerprint and biometric security testing",
-    color: "from-black to-dark-orange"
+    color: "from-dark-gray to-black"
   },
   {
     name: "Vulnerability Assessment",
     icon: Shield,
     description: "Security testing and vulnerability identification",
-    color: "from-dark-orange to-black"
+    color: "from-black to-accent-orange"
   }
 ];
 

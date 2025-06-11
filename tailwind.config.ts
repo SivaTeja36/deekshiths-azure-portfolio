@@ -63,8 +63,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'black': 'hsl(var(--black))',
-				'dark-orange': 'hsl(var(--dark-orange))',
-				'bright-orange': 'hsl(var(--bright-orange))',
+				'dark-gray': 'hsl(var(--dark-gray))',
+				'medium-gray': 'hsl(var(--medium-gray))',
+				'accent-orange': 'hsl(var(--accent-orange))',
 				'warm-gray': 'hsl(var(--warm-gray))',
 				'light-gray': 'hsl(var(--light-gray))'
 			},
