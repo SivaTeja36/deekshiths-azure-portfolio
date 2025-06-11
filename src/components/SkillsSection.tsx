@@ -15,43 +15,43 @@ const skills = [
     name: "Software Testing",
     icon: TestTube,
     description: "Comprehensive testing strategies and methodologies",
-    color: "from-teal-blue to-navy-blue"
+    color: "from-dark-orange to-black"
   },
   {
     name: "Functional Testing", 
     icon: CheckCircle,
     description: "Ensuring software meets functional requirements",
-    color: "from-emerald-green to-teal-blue"
+    color: "from-bright-orange to-dark-orange"
   },
   {
     name: "Performance Testing",
     icon: Activity,
     description: "Load, stress, and performance optimization testing",
-    color: "from-navy-blue to-emerald-green"
+    color: "from-black to-bright-orange"
   },
   {
     name: "Automation Testing",
     icon: Bot,
     description: "Automated test framework development and execution",
-    color: "from-teal-blue to-emerald-green"
+    color: "from-dark-orange to-bright-orange"
   },
   {
     name: "Device Testing",
     icon: Smartphone,
     description: "Cross-platform and device compatibility testing",
-    color: "from-emerald-green to-navy-blue"
+    color: "from-bright-orange to-black"
   },
   {
     name: "Biometric Testing",
     icon: Fingerprint,
     description: "Fingerprint and biometric security testing",
-    color: "from-navy-blue to-teal-blue"
+    color: "from-black to-dark-orange"
   },
   {
     name: "Vulnerability Assessment",
     icon: Shield,
     description: "Security testing and vulnerability identification",
-    color: "from-teal-blue to-navy-blue"
+    color: "from-dark-orange to-black"
   }
 ];
 
@@ -80,7 +80,7 @@ const SkillsSection = () => {
                 <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br ${skill.color} rounded-full flex items-center justify-center shadow-lg`}>
                   <skill.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-navy-blue mb-3">
+                <h3 className="text-xl font-semibold text-black mb-3">
                   {skill.name}
                 </h3>
                 <p className="text-warm-gray leading-relaxed">
